@@ -140,7 +140,7 @@ private suspend fun msgHandler(
       }
     }
   }.toMessageChain()
-  chain = PlainText("【$senderName】").plus(chain)
+  chain = PlainText("【**$senderName**】").plus(chain)
   run {
     val replyId = message.reply ?: return@run
     val localId = Db.getMsgIdByRemote(target.toByteArray(), replyId)?.toI32() ?: return@run
