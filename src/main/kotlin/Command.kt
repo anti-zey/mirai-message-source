@@ -77,7 +77,7 @@ object Command : CompositeCommand(
   @SubCommand("about")
   suspend fun MemberCommandSender.about() {
     if (!MultiBot.shouldReact(group, bot)) return
-    group.sendMessage("GitHub项目主页 https://github.com/MeowCat-Studio/mesagisto")
+    group.sendMessage("GitHub项目主页 https://github.com/anti-zey/mesagisto")
   }
 
   @OptIn(ConsoleExperimentalApi::class)
